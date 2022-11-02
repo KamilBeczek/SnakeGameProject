@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="Assets\Body.png" />
+    <None Remove="Assets\dead.wav" />
     <None Remove="Assets\DeadBody.png" />
     <None Remove="Assets\DeadHead.png" />
     <None Remove="Assets\eat.wav" />
@@ -22,8 +23,14 @@
 
   <ItemGroup>
     <Resource Include="Assets\Body.png" />
+    <EmbeddedResource Include="Assets\dead.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <Resource Include="Assets\DeadBody.png" />
     <Resource Include="Assets\DeadHead.png" />
+    <EmbeddedResource Include="Assets\eat.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <Resource Include="Assets\Empty.png" />
     <Resource Include="Assets\Food.png" />
     <Resource Include="Assets\Ftoonk-Regular.otf" />

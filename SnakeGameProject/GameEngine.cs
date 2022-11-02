@@ -15,13 +15,9 @@ namespace SnakeGameProject
         public GridValue[,] GameBoard;
         public SnakeDirection Dir { get; set; }
 
-
         public LinkedList<ObjectPosition> snakeBody = new LinkedList<ObjectPosition>();
         private readonly LinkedList<SnakeDirection> directionHisotry = new LinkedList<SnakeDirection>();
-
-        Random Random = new Random();
-        SoundPlayer eatSound = new SoundPlayer($"eat.wav");
-        SoundPlayer deadSound = new SoundPlayer($"dead.wav");
+        readonly Random Random = new Random();
 
 
         public GameEngine(int rows, int cols)
@@ -30,8 +26,8 @@ namespace SnakeGameProject
             Columns = cols;
             GameBoard = new GridValue[rows, cols];
             Dir = SnakeDirection.Right;
-            deadSound.Load();
-            eatSound.Load();
+            Music.DeadSound.Load();
+            Music.EatSound.Load();
             GameStart();
             SnakeRespawn();
             SpawnFood();
@@ -183,12 +179,12 @@ namespace SnakeGameProject
 
         public void EatSound()
         {
-            eatSound.Play();
+            Music.EatSound.Play();
         }
 
         public void DeadSound()
         {
-            deadSound.Play();
+            Music.DeadSound.Play();
         }
     }
 }
