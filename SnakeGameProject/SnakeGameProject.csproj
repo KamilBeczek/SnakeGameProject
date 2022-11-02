@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\.png" />
     <None Remove="Assets\Body.png" />
     <None Remove="Assets\DeadBody.png" />
     <None Remove="Assets\DeadHead.png" />
@@ -30,7 +29,6 @@
     <Resource Include="Assets\Ftoonk-Regular.otf" />
     <Resource Include="Assets\Head.png" />
     <Resource Include="Assets\Icon.ico" />
-    <Resource Include="Assets\.png" />
     <Resource Include="Assets\StartingScreen.png" />
   </ItemGroup>
 
