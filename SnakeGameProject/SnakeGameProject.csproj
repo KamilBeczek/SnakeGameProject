@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\.png" />
+    <None Remove="Assets\Body.png" />
+    <None Remove="Assets\DeadBody.png" />
+    <None Remove="Assets\DeadHead.png" />
+    <None Remove="Assets\eat.wav" />
+    <None Remove="Assets\Empty.png" />
+    <None Remove="Assets\Food.png" />
+    <None Remove="Assets\Ftoonk-Regular.otf" />
+    <None Remove="Assets\Head.png" />
+    <None Remove="Assets\Icon.ico" />
+    <None Remove="Assets\StartingScreen.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Body.png" />
+    <Resource Include="Assets\DeadBody.png" />
+    <Resource Include="Assets\DeadHead.png" />
+    <Resource Include="Assets\Empty.png" />
+    <Resource Include="Assets\Food.png" />
+    <Resource Include="Assets\Ftoonk-Regular.otf" />
+    <Resource Include="Assets\Head.png" />
+    <Resource Include="Assets\Icon.ico" />
+    <Resource Include="Assets\.png" />
+    <Resource Include="Assets\StartingScreen.png" />
+  </ItemGroup>
+
+</Project>
